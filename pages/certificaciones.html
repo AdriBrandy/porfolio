@@ -1,248 +1,265 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="/bootstrap.bundle.min.js"></script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mi Portfolio</title>
-    <link rel="shortcut icon" href="/Imagenes/portfolio.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/cover.css">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
+<head>
+  <script src="bootstrap.bundle.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Portfolio</title>
+  <link rel="shortcut icon" href="Imagenes\portfolio.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\cover.css">
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
       }
+    }
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
 
-      .b-example-divider {
-        width: 100%;
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+    .btn-bd-primary {
+      --bd-violet-bg: #712cf9;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
-      .btn-bd-primary {
-        --bd-violet-bg: #712cf9;
-        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
 
-        --bs-btn-font-weight: 600;
-        --bs-btn-color: var(--bs-white);
-        --bs-btn-bg: var(--bd-violet-bg);
-        --bs-btn-border-color: var(--bd-violet-bg);
-        --bs-btn-hover-color: var(--bs-white);
-        --bs-btn-hover-bg: #6528e0;
-        --bs-btn-hover-border-color: #6528e0;
-        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
-        --bs-btn-active-color: var(--bs-btn-hover-color);
-        --bs-btn-active-bg: #5a23c8;
-        --bs-btn-active-border-color: #5a23c8;
-      }
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
 
-      .bd-mode-toggle {
-        z-index: 1500;
-      }
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
 
-      .bd-mode-toggle .dropdown-menu .active .bi {
-        display: block !important;
-      }
-    </style>
 
-    
-  </head>
-  <body>
-    <div class="nastyle">
-        <header>
-          <div>
-            <nav class="nav nav-masthead justify-content-center float-md-end">
-              <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/index.html">Sobre Mi</a>
-              <a class="nav-link fw-bold py-1 px-0 active" href="/pages/portfolio.html">Mi Porfolio</a>
-              <a class="nav-link fw-bold py-1 px-0 active" href="/pages/Contacto.html">Contacto</a>
-              <a class="nav-link fw-bold py-1 px-0 active" href="/pages/certificaciones.html">Cursos realizados</a>
-            </nav>
+</head>
+
+<body>
+  <div class="nastyle">
+    <header>
+      <div>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Sobre Mi</a>
+          <a class="nav-link fw-bold py-1 px-0 active" href="pages\portfolio.html">Mi Porfolio</a>
+          <a class="nav-link fw-bold py-1 px-0 active" href="pages\Contacto.html">Contacto</a>
+          <a class="nav-link fw-bold py-1 px-0 active" href="pages\certificaciones.html">Cursos realizados</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  </div>
+  <main>
+
+    <div class="main2">
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-dark">Mis certificaciones</h1>
+            <p>Me gusta poder realizar varios cursos y capacitaciones para poder afianzar constantemente mis
+              conocimientos y continuar aprendiendo </p>
           </div>
-        </header>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="Imagenes\CERTIFICACIONES\agile-explorer.png" alt="Agile Explorer">
+                <div class="card-body">
+                  <p class="card-text">Habilidades: <br>Coaching Ágil - Cultura ágil-Metodología Ágil-Operaciones
+                    ágiles- Prácticas ágiles - Gestión ágil de
+                    proyectos-Colaboración-Comunicación-Iteraciones-Metodología Scrum-Trabajo en Equipo
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="https://www.credly.com/badges/c84ebbcd-c597-4108-b741-160de586d496/public_url">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="Imagenes\CERTIFICACIONES\explore-emerging-tech.png" alt="explore emerging-tech">
+                <div class="card-body">
+                  <p class="card-text">Habilidades: <br> Inteligencia Artificial (IA)-Cadena de bloques-Exploración de
+                    carreras en tecnología-Computación en la nube-Ciberseguridad-Datos y análisis (ciencia de
+                    datos)-Internet de las cosas (IoT)
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="https://www.credly.com/badges/c84ebbcd-c597-4108-b741-160de586d496/public_url">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="Imagenes\CERTIFICACIONES\ibm-z-xplore-concepts.png" alt="zxplore ibm-z-xplore-concepts">
+                <div class="card-body">
+                  <p class="card-text">Habilidades: <br>Bash-IBM Z-JCL-Comandos MVS-Programación-Python-z/OS-z/OS
+                    UNIX-Zowe <br><br><br></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="https://www.credly.com/badges/7067dc6f-ddcf-47c0-8860-dc3725bead2b/public_url">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="Imagenes\CERTIFICACIONES\codoacodo.jpeg" alt="Codo a Codo">
+                <div class="card-body">
+                  <p class="card-text">Habilidades: <br> HTML - CSS - Bootstrap - Vue - Javascript - Python</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="/Imagenes/CERTIFICACIONES/codo a codo.jpeg">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/Imagenes/CERTIFICACIONES/english for it.jpeg" alt="English IT">
+                <div class="card-body">
+                  <p class="card-text">Habilidades <br> Vocabulario técnico - situations <br></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="Imagenes\CERTIFICACIONES\english-for-it.jpeg">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="Imagenes\CERTIFICACIONES\ingles.jpeg" alt="ingles b2">
+                <div class="card-body">
+                  <p class="card-text">Habilidades <br> Vocabulario - Tenses <br></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="/Imagenes/CERTIFICACIONES/ingles.jpeg">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/Imagenes/CERTIFICACIONES/Introduccion analisis de datos.jpeg" alt="intro analisis de datos">
+                <div class="card-body">
+                  <p class="card-text">Habilidades: Pandas - Matplotlib - Seaborn - Jupyter Notebook - Python</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="Imagenes\CERTIFICACIONES\Introduccion-analisis-de-datos.jpeg">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="/Imagenes/CERTIFICACIONES/fundamentos de data analytics.jpeg" alt="">
+                <div class="card-body">
+                  <p class="card-text">Habilidades: Fundamentos de Data analytics <br><br><br></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"
+                        href="Imagenes\CERTIFICACIONES\fundamentos-de-dataanalytics.jpeg">Ver</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <main>
 
-      <div class="main2">
-        <section class="py-5 text-center container">
-          <div class="row py-lg-5">
-            <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-dark">Mis certificaciones</h1>
-              <p>Me gusta poder realizar varios cursos y capacitaciones para poder afianzar constantemente mis conocimientos y continuar aprendiendo </p>
-            </div>
-          </div>
-        </section>
-  
-        <div class="album py-5 bg-body-tertiary">
-      <div class="container">
-  
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/agile-explorer.png" alt="Agile Explorer">
-              <div class="card-body">
-                <p class="card-text">Habilidades: <br>Coaching Ágil - Cultura ágil-Metodología Ágil-Operaciones ágiles- Prácticas ágiles - Gestión ágil de proyectos-Colaboración-Comunicación-Iteraciones-Metodología Scrum-Trabajo en Equipo
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.credly.com/badges/c84ebbcd-c597-4108-b741-160de586d496/public_url">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/explore-emerging-tech.png" alt="explore emerging-tech">
-              <div class="card-body">
-                <p class="card-text">Habilidades: <br> Inteligencia Artificial (IA)-Cadena de bloques-Exploración de carreras en tecnología-Computación en la nube-Ciberseguridad-Datos y análisis (ciencia de datos)-Internet de las cosas (IoT)
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.credly.com/badges/c84ebbcd-c597-4108-b741-160de586d496/public_url">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/ibm-z-xplore-concepts.png" alt="zxplore ibm-z-xplore-concepts">
-              <div class="card-body">
-                <p class="card-text">Habilidades: <br>Bash-IBM Z-JCL-Comandos MVS-Programación-Python-z/OS-z/OS UNIX-Zowe <br><br><br></p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.credly.com/badges/7067dc6f-ddcf-47c0-8860-dc3725bead2b/public_url">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/codo a codo.jpeg" alt="Codo a Codo">
-              <div class="card-body">
-                <p class="card-text">Habilidades: <br> HTML - CSS - Bootstrap - Vue - Javascript - Python</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/Imagenes/CERTIFICACIONES/codo a codo.jpeg">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/english for it.jpeg" alt="English IT">
-              <div class="card-body">
-                <p class="card-text">Habilidades <br> Vocabulario técnico - situations <br></p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/Imagenes/CERTIFICACIONES/english for it.jpeg">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/ingles.jpeg" alt="ingles b2">
-              <div class="card-body">
-                <p class="card-text">Habilidades <br> Vocabulario - Tenses <br></p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/Imagenes/CERTIFICACIONES/ingles.jpeg">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/Introduccion analisis de datos.jpeg" alt="intro analisis de datos">
-              <div class="card-body">
-                <p class="card-text">Habilidades: Pandas - Matplotlib - Seaborn - Jupyter Notebook - Python</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/Imagenes/CERTIFICACIONES/Introduccion analisis de datos.jpeg">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card shadow-sm">
-              <img src="/Imagenes/CERTIFICACIONES/fundamentos de data analytics.jpeg" alt="">
-              <div class="card-body">
-                <p class="card-text">Habilidades: Fundamentos de Data analytics <br><br><br></p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="/Imagenes/CERTIFICACIONES/fundamentos de data analytics.jpeg">Ver</a></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-        </div>
-      </div>
+  </main>
 
-    </main>
-
-    <footer class="mt-auto text-white-50">
-      <div class="container">
-        <p class="float-end mb-1">
-          <a href="#">Volver al inicio</a>
-        </p>
-      </div>
-    </footer>
+  <footer class="mt-auto text-white-50">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Volver al inicio</a>
+      </p>
+    </div>
+  </footer>
 
 
-  </body>
+</body>
+
 </html>
