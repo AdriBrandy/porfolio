@@ -62,7 +62,7 @@ body {
 }
 
 .main2{
-  background-image: url(/Imagenes/portada.jpg);
+  background-image: url(../Imagenes/portada.jpg);
   color: #fff;
 }
 .main2 p{
