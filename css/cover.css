@@ -73,3 +73,13 @@ body {
   text-decoration: none;
   color: #fff;
 }
+
+
+/* imagenes de proyectos */
+
+.imagen-proyecto {
+  max-width: 100%;
+  height: 200px;
+ 
+}
+
